@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Wed Jul 15 22:24:14 2020.
-
-@author: Rahul Gupta.
-"""
 
 import os
 import fitz #PyMuPDF 
@@ -44,6 +39,7 @@ def pdftopng(file_path, pwd):
         print(fol_, e)
     doc_.close()
     return  os.path.join(image_path, fol_)
+
 
 
 
