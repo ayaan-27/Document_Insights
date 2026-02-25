@@ -20,10 +20,10 @@ app.config['UPLOAD_FOLDER'] = "uploads"
 app.secret_key = "ayaan_k27"
 CORS(app)
 
-DB_HOST = "3.139.198.182"
-DB_NAME = "DeepInsights"
-DB_USER = "postgres"
-DB_PASS = "DI123"
+DB_HOST = ""
+DB_NAME = ""
+DB_USER = ""
+DB_PASS = ""
 
 conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER,
                         password=DB_PASS, host=DB_HOST)
@@ -1123,3 +1123,4 @@ def docs_completed_qc():
 if __name__ == '__main__':
     app.debug = True
     app.run(host='0.0.0.0', port=5000, threaded="True", debug=True)
+
